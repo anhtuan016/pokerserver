@@ -85,7 +85,7 @@ public class MqttServletGameServer implements MqttCallback, RoomListener {
 	
 	static 
 	{
-		final InputStream inputStream = MqttServletGameServer.class.getResourceAsStream("logging.properties");
+		final InputStream inputStream = MqttServletGameServer.class.getResourceAsStream("/logging.properties");
 		try
 		{
 		    LogManager.getLogManager().readConfiguration(inputStream);
