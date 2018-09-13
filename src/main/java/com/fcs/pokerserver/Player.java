@@ -84,7 +84,7 @@ public class Player {
 	 * */
 	public void bet(long amount)
 	{
-		assert amount<this.balance;
+		assert amount<=this.balance;
 		
 		assert this.sittingOut==false;
 		this.setRoundBet(this.getRoundBet() + amount);
